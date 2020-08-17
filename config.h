@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=24:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.6;
+float alpha = 0.92;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -124,6 +124,9 @@ static const char *colorname[] = {
 	"#cccccc",
 	"#555555",
 	"black",
+	"#e6e1cf",
+	"#0f1419",
+	"#f29718"
 };
 
 
@@ -131,9 +134,9 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
+unsigned int defaultfg = 259;
+unsigned int defaultbg = 260;
+static unsigned int defaultcs = 261;
 static unsigned int defaultrcs = 257;
 
 /*
